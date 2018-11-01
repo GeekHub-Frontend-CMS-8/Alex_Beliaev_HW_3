@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+ <head>
+ 	<meta charset="utf-8">
+	<title>HomeWork3</title>
+	<link rel="stylesheet" href="styles/style.css">
+ </head>
+
+ <body class="background">
+  <header>
+   <!--Шапка-->
+  	<div>
+  	 <h1>Расскажите немного о себе...</h1>
+  	 <hr>
+    </div>
+  </header>
+   <!--Основа-->
+    <main>
+
+	 <!--Первая часть-->
+     <div class="block">
+      <form action="" method="post">
+       <fieldset>
+
+       	<legend><b>Коротко о себе</b></legend>
+
+        <!--Имя-->
+        <div class="element">
+       	 <label for="firstname">
+       	   Имя:
+       	 </label>
+       	 <input id="firstname" type="text" name="surname" placeholder="Имя" pattern="^[А-Яа-яЁё\s]+$"
+       	  required>
+        </div>
+
+        <!--Фамилия-->
+        <div class="element">
+         <label for="lastname">
+          Фамилия:
+         </label>
+         <input id="lastname" type="text" name="lastname" placeholder="Фамилия" 
+          pattern="^[А-Яа-яЁё\s]+$" required>
+        </div>
+
+        <!--Пол-->
+        <div class="element">
+         Пол:
+
+         <!--Мужской-->
+         <input id="man" type="radio" name="gender">	
+         <label for="man">
+          мужской
+         </label>
+		
+		 <!--Женский-->
+         <input id="woman" type="radio" name="gender">
+         <label for="woman">
+          женский
+         </label>
+        </div>
+
+		<!--Возраст-->
+		<div class="element">
+		 <label for="age">
+		  Возраст:
+		 </label>
+		 <input id="age" type="text" name="age" size="4" pattern="\d+" placeholder="возраст"> лет 
+		 <!--Хотел изменить тип с text на number, но тогда нельзя регулировать размер атрибутом size :(-->
+		</div>
+       </fieldset>
+     </div>
+
+	 <!--Вторая часть-->
+     <div class="block">
+      
+       <fieldset>
+       	<legend><b>Подробнее о себе</b></legend>
+       	
+       <!--Пол-->
+       <div>
+       	<div>
+       	 <input id="gender_man" type="radio" name="genders">
+       	 <label for="gender_man">Молодой человек</label>
+       	</div>
+
+       	<div>
+       	 <input id="gender_woman" type="radio" name="genders"> 
+       	 <label for="gender_woman">Девушка</label>
+       	</div>
+       </div>
+
+	   <!--текст вопросы-->
+       <div>
+       	<div>
+       	 <input id="date_of_birth" type="text" name="date_of_birth" placeholder="День рождения"> 
+       	 <label for="date_of_birth">Дата рождения</label>
+       	</div>
+
+       	<div>
+       	 <input id="marital_status" type="text" name="marital_status" placeholder="Семейное положение">
+		  <label for="marital_status">Семейное положение</label>
+       	</div>
+
+       	<div>
+       	 <input id="social_status" type="text" name="social_status" placeholder="Статус">
+		  <label for="social_status">Социальный статус</label>
+       	</div>
+
+       	<div>
+       	 <input id="location" type="text" name="location" placeholder="Местожительство">
+		  <label for="location">Местожительство</label>
+       	</div>
+       </div>
+	   
+	   <div>
+	    <div class="element"> 
+	   	 <b>Что вы обично делаете на выходных:</b>
+	    </div>
+		
+		<!--Вопросы с галкой-->
+	    <div>
+	   	 <input id="question_1" type="checkbox" name="question_1">
+	   	  <label for="question_1">Сплю</label>
+        </div>
+		
+		<div>
+	   	 <input id="question_2" type="checkbox" name="question_2">
+	   	  <label for="question_2">Гуляю с друзьями</label>
+        </div>
+		
+		<div>
+	   	 <input id="question_3" type="checkbox" name="question_3">
+	   	  <label for="question_3">Хожу на рыбалку</label>
+        </div>
+		
+		<div>
+	   	<input id="question_4" type="checkbox" name="question_4">
+	   	 <label for="question_4">Играю в игры</label>
+        </div>
+       </div>
+
+       <div class="element">
+       	<b>Дайте оценку сайту:</b>
+       </div>
+
+	   <!--Вопрос с выбором оценки сайта-->
+       <div>
+       	<select name="level" id="">
+       	 <option value="">Отлично</option>
+       	 <option value="">Хорошо</option>
+       	 <option value="">Так себе</option>
+       	 <option value="">Плохо</option>
+       	 <option value="">Очень плохо</option>
+       	</select>
+       </div>
+
+       <div class="element">
+       	<b>Сколько кгиг вы прочитали за своб жизнь:</b>
+       </div>
+
+	   <!--Вопрос про кгиги-->
+       <div>
+       	<div>
+       	 <input id="number_book_1" type="radio" name="number_book">
+       	 <label for="number_book_1">0-10</label>
+        </div>
+        <div>
+       	 <input id="number_book_2" type="radio" name="number_book">
+       	 <label for="number_book_2">11-20</label>
+        </div>
+        <div>
+       	 <input id="number_book_3" type="radio" name="number_book">
+       	 <label for="number_book_3">21-50</label>
+        </div>
+        <div>
+       	 <input id="number_book_4" type="radio" name="number_book">
+       	 <label for="number_book_4">50+</label>
+       	</div>
+       </div>
+
+	   <!--Коментарии-->
+	   <div>
+	    <div class="element">
+	   	 <b>Ваши коментарии:</b><br>
+	   	 <textarea rows="15" cols="70" name="comment"></textarea>
+	    </div>
+
+	   <!--Выбор позиции-->
+	   	<div>
+	   	 <select name="position" id="">
+	   	  <option value="">Первая позиция</option>
+	   	  <option value="">Вторая позиция</option>
+	   	  <option value="">Третья позиция</option>
+	   	 </select>
+	   	</div>
+	   </div>
+
+	  </fieldset>
+
+	 <div class="block">
+	  <fieldset>
+	   <legend>И в заключении</legend>
+
+	   <!--Просто поле-->
+	   <div>
+	   	<input type="text" name="null" placeholder="Это поле было введено до вас" size="25">
+	   </div>
+
+	   <div class="element">
+	   	<b>Email:</b><br>
+	   	<input type="email" name="email">
+	   </div>
+	   
+	   <!--Спам-->
+	   <div class="element">
+	   	 <strong>Хотите подписаться на самую модную рассылку спама?</strong><br>
+	   	 <i>Выберите категории</i>
+	   </div>
+
+	   <div>
+	   	<div>
+	   	 <input type="checkbox" name="spam" id="spam_1">
+	   	 <label for="spam_1">Оборудование</label>	
+	   	</div>
+
+	   	<div>
+	   	 <input type="checkbox" name="spam" id="spam_2">
+	   	 <label for="spam_2">Как приготовить обеды</label>	
+	   	</div>
+
+	   	<div>
+	   	 <input type="checkbox" name="spam" id="spam_3">
+	   	 <label for="spam_3">Заработай миллион, создав сайт!</label>	
+	   	</div>
+	   </div>
+
+	  <!--Сложность-->
+	   <div class="element">
+	   	<b>На сколько сложная задача:</b>
+	   </div>
+
+	   <div>
+	   	<div>
+	   	 <input type="checkbox" name="complexity" id="complexity_1">
+	   	 <label for="complexity_1">Оборудование</label>	
+	   	</div>
+
+	   	<div>
+	   	 <input type="checkbox" name="complexity" id="complexity_2">
+	   	 <label for="complexity_2">Как приготовить обеды</label>	
+	   	</div>
+
+	   	<div>
+	   	 <input type="checkbox" name="complexity" id="complexity_3">
+	   	 <label for="complexity_3">Заработай миллион, создав сайт!</label>	
+	   	</div>
+	   </div>
+	  
+	   	</fieldset>
+
+	   <!--Кнопка-->
+	   <input type="submit" name="">
+      </form>
+     </div>
+
+    </main>
+ </body>
+
+</html>
